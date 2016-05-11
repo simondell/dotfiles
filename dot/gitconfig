@@ -1,5 +1,13 @@
-[user]
-	name = Simon Dell
-	email = simon.dell@gamesys.co.uk
 [push]
 	default = simple
+[color]
+    ui = true
+[alias]
+    squash = rebase -i HEAD~2
+    l = log --oneline
+    ll = log
+    s = status --short
+    ss = status
+    c = commit
+    new = checkout -b
+    shove = push -f
