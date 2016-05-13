@@ -10,5 +10,5 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 # better file listing
-alias lls='ls -GFbhl'	# my full-on color, type makers/, C-encoding non-printables, units, long format
-alias ls="ls -CGF"		# pretty, shortform
+alias ls='ls -GFbhla'	# my full-on color, type makers/, C-encoding non-printables, units, long format
+alias lss="ls -CGF"		# pretty, shortform
