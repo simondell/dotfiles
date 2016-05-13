@@ -15,7 +15,12 @@ brew cask install dropbox
 brew cask install google-chrome
 brew cask install chrome-devtools
 brew cask install firefox
-brew install rbenv ruby-build
-brew cask install sublime-text
 brew cask install iterm2
+brew cask install skype
+brew cask install virtualbox
+brea cask install vagrant
+
+# dev tools
+brew install rbenv ruby-build
+brew install node
 
