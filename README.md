@@ -4,4 +4,4 @@ Dotfiles are collections of terminal, application and system settings. They help
 
 These are mine.
 
-I've taken inspiration and copied scripts from {Zach Holman's dotfiles](https://github.com/holman/dotfiles).
+I've taken inspiration and copied scripts from {Zach Holman's dotfiles](https://github.com/holman/dotfiles). In fact, I've borrowed so much, that it should have been a fok. However, I wanted to learn how Zach's scripts worked, so I took little sips from his brew as I went along rather than downing the whole lot in one.
