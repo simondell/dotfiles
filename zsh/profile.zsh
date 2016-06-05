@@ -23,4 +23,4 @@ eval "$(rbenv init -)"
 
 # Grunt completion
 # - I should probably have a completions list, or dotfile
-eval "$(grunt --completion=zsh)"
+# eval "$(grunt --completion=zsh)"
