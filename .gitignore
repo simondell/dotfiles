@@ -1,4 +1,4 @@
 .DS_Store
 backups/
 git/gitconfig.local.symlink
-zsh/projects.local.symlink
+zsh/projects.local.zsh
