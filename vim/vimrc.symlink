@@ -7,13 +7,33 @@ set rnu
 execute pathogen#infect()
 
 
+"" working directories
+:set directory=~/.vim/swapfiles/
+
+
 "" basic settings
 set nocompatible                " choose no compatibility with legacy vi
 syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
+set cursorline                  " underline current line
+set cursorcolumn                " underline current column
+:hi CursorLine   cterm=NONE ctermbg=darkgrey guibg=darkgrey
+:hi CursorColumn   cterm=NONE ctermbg=darkgrey guibg=darkgrey
+:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
+augroup CursorLine
+	au!
+	au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+	au WinLeave * setlocal nocursorline
+augroup END
+
+augroup CursorColumn
+	au!
+	au VimEnter,WinEnter,BufWinEnter * setlocal cursorcolumn
+	au WinLeave * setlocal nocursorcolumn
+augroup END
 
 "" Whitespace
 set nowrap                      " don't wrap lines
