@@ -1,5 +1,5 @@
 .DS_Store
 backups/
-swapfiles/*.*
+swapfiles/
 git/gitconfig.local.symlink
 zsh/projects.local.zsh
