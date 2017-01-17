@@ -1,16 +1,19 @@
+# vim: set filetype=gitcommit: 
 [core]
     excludesfile = ~/.gitignore
 [include]
     path = ~/.gitconfig.local
 [push]
-	default = simple
+    default = simple
 [color]
     ui = true
 [alias]
     new = checkout -b
+    b = branch
     c = commit
     l = log --oneline
     ll = log
+    out = checkout
     shove = push -f
     squash = rebase -i HEAD~2
     s = status --short
