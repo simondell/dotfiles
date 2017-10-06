@@ -137,6 +137,9 @@ install_dotfiles () {
   done
 }
 
+echo "Set ZSH as the default shell (will ask for pwd)"
+chsh -s /bin/zsh
+
 setup_gitconfig
 install_dotfiles
 
