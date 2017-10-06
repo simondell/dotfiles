@@ -1,7 +1,24 @@
-# theOtherDell's dotfiles
+# dotfiles
 
-Dotfiles are collections of terminal, application and system settings. They help a developer maintain a comfortable and familiar working environment across multiple machines (or across rebuilds of the same machine). They sometimes include scripts for automatically configuring a system to use the collection, or for installing software.
+My shell and system configurations, based on {Zach Holman's](https://github.com/holman/dotfiles).
 
-These are mine.
 
-I've taken inspiration and copied scripts from {Zach Holman's dotfiles](https://github.com/holman/dotfiles). In fact, I've borrowed so much, that it should have been a fork. However, I wanted to learn how Zach's scripts worked, so I took little sips from his brew as I went along rather than downing the whole lot in one.
+
+## How to use them
+
+1. install a fresh macOS
+2. log in, do all the iCloud stuff
+3. clone this directory `git clone git@github.com:simondell/dotfiles.git`
+4. macOS will get to installing command-line tools (phew)
+5. curse as you realise you haven't created an SSL cert for this new machine
+6. follow the steps: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+7. don't forget to add the new key to github
+8. goto 3 'til that's done
+9 `cd dotfiles`
+10. `./script/bootstrap`
+11. relax!
+12. well, no, it doesn't quite work yet.
+
+
+
+
