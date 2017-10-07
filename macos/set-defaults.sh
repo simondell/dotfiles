@@ -35,7 +35,7 @@ defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.Web
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # turn the spotlight icon off - also kills the keyboard shortcut (i think)
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+# sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 # ... or on:
 #sudo chmod 755 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 
