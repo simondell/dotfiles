@@ -140,6 +140,9 @@ install_dotfiles () {
 echo "Set ZSH as the default shell (will ask for pwd)"
 chsh -s /bin/zsh
 
+# Set macOS defaults
+$DOTFILES_ROOT/macos/set-defaults.sh
+
 setup_gitconfig
 install_dotfiles
 
