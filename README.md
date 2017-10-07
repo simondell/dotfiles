@@ -3,8 +3,7 @@
 My shell and system configurations, based on {Zach Holman's](https://github.com/holman/dotfiles).
 
 
-
-## How to use them
+# How to use them
 
 1. install a fresh macOS
 2. log in, do all the iCloud stuff
@@ -17,8 +16,7 @@ My shell and system configurations, based on {Zach Holman's](https://github.com/
 9 `cd dotfiles`
 10. `./script/bootstrap`
 11. relax!
-12. well, no, it doesn't quite work yet.
-
+12. if softwareupdate finds updates, it may make you restart
 
 
 
