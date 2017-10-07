@@ -2,9 +2,6 @@
 
 My shell and system configurations, based on {Zach Holman's](https://github.com/holman/dotfiles).
 
-
-# How to use them
-
 1. install a fresh macOS
 2. log in, do all the iCloud stuff
 3. clone this directory `git clone git@github.com:simondell/dotfiles.git`
