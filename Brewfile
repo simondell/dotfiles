@@ -16,6 +16,7 @@ brew 'watchman'
 brew 'wget'
 brew 'leiningen"
 
+cask 'dropbox'
 cask 'sublime-text'
 cask 'java'
 cask 'firefox'
