@@ -14,7 +14,7 @@ brew 'rbenv'
 brew 'nodenv'
 brew 'pyenv'
 brew 'wget'
-brew 'leiningen"
+brew 'leiningen'
 brew 'yarn'
 brew 'tmux'
 
