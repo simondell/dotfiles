@@ -12,6 +12,3 @@ alias ....="cd ../../.."
 # better file listing
 alias ls='ls -GFbhla'	# my full-on color, type makers/, C-encoding non-printables, units, long format
 alias lss="ls -CGF"		# pretty, shortform
-
-# hub === git
-alias git=hub
