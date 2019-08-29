@@ -1,3 +1,7 @@
-if command -v pyenv 1>/dev/null 2>&1; then
+echo "Initialising pyenv"
+
+# init according to man page
+if (( $+commands[pyenv] ))
+then
   eval "$(pyenv init -)"
 fi
