@@ -20,6 +20,7 @@
     squash = rebase -i HEAD~2
     s = status --short
     ss = status
+    sync = fetch --all --prune
 [user]
 	name = Simon Dell
 	email = simon.dell@founders4schools.org.uk
