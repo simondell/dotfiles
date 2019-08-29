@@ -3,10 +3,6 @@ color murphy
 set rnu
 
 
-"" start pathogen to help wrangle plugins
-execute pathogen#infect()
-
-
 "" working directories
 :set directory=~/.vim/swapfiles/
 
@@ -61,12 +57,6 @@ set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
-
-
-"" Ctrl-P
-set runtimepath^=~/.vim/bundle/ctrlp.vim"
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 
 
 "" JavaScript & JSX
