@@ -58,6 +58,9 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
+"" Ctrl-P
+let ctrlp_switch_buffer = 'E'
+let g:ctrlp_match_window = 'top'
 
 "" JavaScript & JSX
 let g:jsx_ext_required = 0
