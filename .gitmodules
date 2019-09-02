@@ -4,3 +4,6 @@
 [submodule "vim/vim.symlink/pack/ages/start/emmet-vim"]
 	path = vim/vim.symlink/pack/ages/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "vim/vim.symlink/pack/ages/start/vim-polyglot"]
+	path = vim/vim.symlink/pack/ages/start/vim-polyglot
+	url = git@github.com:sheerun/vim-polyglot.git
