@@ -7,3 +7,6 @@
 [submodule "vim/vim.symlink/pack/ages/start/vim-polyglot"]
 	path = vim/vim.symlink/pack/ages/start/vim-polyglot
 	url = git@github.com:sheerun/vim-polyglot.git
+[submodule "vim/vim.symlink/pack/ages/start/vim-localrc"]
+	path = vim/vim.symlink/pack/ages/start/vim-localrc
+	url = git@github.com:thinca/vim-localrc.git
