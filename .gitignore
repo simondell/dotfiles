@@ -2,3 +2,4 @@
 backups/
 git/gitconfig.local.symlink
 zsh/projects.local.zsh
+.netrwhist
