@@ -18,7 +18,8 @@ brew 'wget'
 brew 'leiningen'
 brew 'yarn'
 brew 'tmux'
-brew 'heroku/brew/heroku'
+brew 'heroku/brew/herokue
+brew 'the_silver_searcher'
 
 cask 'sublime-text'
 cask 'java'

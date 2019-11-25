@@ -1,20 +1,20 @@
 "" Visuals
-color murphy
+color slate
 set rnu
 
-
-"" working directories
-:set directory=~/.vim/swapfiles/
-
+"" environs
+set directory=~/.vim/swapfiles/ " locate swapfiles
+set exrc                        " run local .vimrc
 
 "" basic settings
 set nocompatible                " choose no compatibility with legacy vi
 syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
-filetype plugin indent on       " load file type plugins + indentation
 set scrolloff=999
 set hidden
+set laststatus=2              " show statusline
+set statusline+=%f            " add relative filepath to statusline
 
 "" Highlight current line and column
 set cursorline                  " underline current line
@@ -35,10 +35,11 @@ augroup CursorColumn
 	au WinLeave * setlocal nocursorcolumn
 augroup END
 
-
 "" Whitespace
+filetype plugin indent on       " load file type plugins + indentation
 set nowrap                      " don't wrap lines
-set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
+set tabstop=4 shiftwidth=4      " a tab is four spaces (or set this to 4)
+set smartindent
 set backspace=indent,eol,start  " backspace through everything in insert mode
 nmap <leader>l :set list!<CR>   " toggle visible whitespace
 set list
@@ -46,36 +47,19 @@ set listchars=tab:—\ ,eol:¬
 ""highlight NonText guifg=#3B3B47
 ""highlight SpecialKey guifg=#4a4a59
 
-
-"" Code concealing (like ligatures but for keywords)
-set conceallevel=0
-map <leader>l :exec &conceallevel ? "set conceallevel=0" : "set conceallevel=1"<CR>
-
-
 "" Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
+nmap <leader>n :noh<CR>         " \n to clear highlighting "n -> noh -> no highlight"
 
 "" Ctrl-P
-let ctrlp_switch_buffer = 'E'
-let g:ctrlp_match_window = 'top'
+let g:ctrlp_switch_buffer = 'E'
+let g:ctrlp_match_window = 'bottom'
 
 "" JavaScript & JSX
 let g:jsx_ext_required = 0
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_flow = 1
-let g:javascript_conceal_function             = "ƒ"
-let g:javascript_conceal_null                 = "ø"
-let g:javascript_conceal_this                 = "@"
-let g:javascript_conceal_return               = "⇚"
-let g:javascript_conceal_undefined            = "¿"
-let g:javascript_conceal_NaN                  = "ℕ"
-let g:javascript_conceal_prototype            = "¶"
-let g:javascript_conceal_static               = "•"
-let g:javascript_conceal_super                = "Ω"
-let g:javascript_conceal_arrow_function       = "⇒"
-let g:javascript_conceal_noarg_arrow_function = "🞅"
-let g:javascript_conceal_underscore_arrow_function = "🞅"
 
