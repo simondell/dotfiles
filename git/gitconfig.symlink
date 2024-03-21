@@ -1,26 +1,32 @@
 # vim: set filetype=gitcommit: 
 [core]
-    excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
 [include]
-    path = ~/.gitconfig.local
+	path = ~/.gitconfig.local
 [push]
-    default = simple
+	default = simple
 [color]
-    ui = true
+	ui = true
 [alias]
-    new = checkout -b
-    b = branch
-    c = commit
-    l = log --oneline
-    ll = log
-    out = checkout
-    p = push
-    butt = push --force-with-lease
-    shove = push --force
-    squash = rebase -i HEAD~2
-    s = status --short
-    ss = status
-    sync = fetch --all --prune
+	new = checkout -b
+	b = branch
+	bs = branch --show-current
+	c = commit
+	l = log --oneline
+	ll = log
+	out = checkout
+	p = push
+	pp =  push --no-verify
+	ppp = push --force-with-lease
+	pppp = push --force
+	squash = rebase -i HEAD~2
+	s = status --short
+	ss = status
+	sync = fetch --all --prune
 [user]
 	name = Simon Dell
-	email = simon.dell@founders4schools.org.uk
+	email = simon.dell@dazn.com
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[rerere]
+	enabled = true

@@ -3,7 +3,13 @@
 # bootstrap installs things.
 
 cd "$(dirname "$0")/.."
-DOTFILES_ROOT=$(pwd -P)
+
+if [DOTFILES_ROOT -z]
+then
+  echo "Please provide DOTFILES_ROOT e.g. DOTFILES_ROOT=$/(pwd -P/)"
+  exit 1
+fi
+
 
 set -e
 

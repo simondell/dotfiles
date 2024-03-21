@@ -1,3 +1,6 @@
+# prefix key for the logi ergo keyboard (and all shitty keyboards without a right ctrl
+# set -g prefix C-n
+
 # reload config file (change file location to your the tmux.conf you want to use)
 bind r source-file ~/.tmux.conf
 

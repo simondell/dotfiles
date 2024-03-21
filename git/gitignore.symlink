@@ -1,7 +1,7 @@
 # editor files #
 ################
 *.sublime*
-
+*.code-snippets
 
 # Packages #
 ############
@@ -20,4 +20,5 @@
 ############
 .DS_Store
 .DS_Store?
-Icon
+Icon
+
