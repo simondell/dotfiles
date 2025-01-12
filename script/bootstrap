@@ -4,12 +4,7 @@
 
 cd "$(dirname "$0")/.."
 
-if [DOTFILES_ROOT -z]
-then
-  echo "Please provide DOTFILES_ROOT e.g. DOTFILES_ROOT=$/(pwd -P/)"
-  exit 1
-fi
-
+DOTFILES_ROOT=$(pwd -P)
 
 set -e
 
@@ -143,8 +138,8 @@ install_dotfiles () {
   done
 }
 
-echo "Set ZSH as the default shell (will ask for pwd)"
-chsh -s /bin/zsh
+# echo "Set ZSH as the default shell (will ask for pwd)"
+# chsh -s /bin/zsh
 
 # Set macOS defaults
 $DOTFILES_ROOT/macos/set-defaults.sh
