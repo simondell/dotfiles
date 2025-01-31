@@ -19,7 +19,7 @@ brew "pyenv"
 brew "wget"
 brew "leiningen"
 brew "tmux"
-brew "hub"
+brew "gh"
 
 cask "firefox"
 cask "fluid"
