@@ -24,4 +24,5 @@ brew "gh"
 brew "tree"
 
 cask "firefox"
-cask "fluid"
+# cask "fluid"
+cask "font-liga-comic-mono"
