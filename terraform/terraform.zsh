@@ -1,2 +1,0 @@
-terraform -install-autocomplete
-
