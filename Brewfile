@@ -21,7 +21,6 @@ brew "wget"
 # brew "leiningen"
 brew "tmux"
 brew "gh"
-brew "terraform"
 brew "tree"
 
 cask "firefox"
