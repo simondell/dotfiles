@@ -41,12 +41,12 @@ done
 export ZSH=$HOME/Make/dotfiles
 
 # Install homebrew
-$ZSH/homebrew/install.sh 2>&1
+$DOTFILES_ROOT/homebrew/install.sh 2>&1
 
 # Upgrade homebrew
 echo "› brew update"
 brew update
 
 # Install software
-echo "› $ZSH/script/install"
-$ZSH/script/install
+echo "› $DOTFILES_ROOT/script/install"
+$DOTFILES_ROOT/script/install
