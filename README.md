@@ -10,10 +10,11 @@ My shell and system configurations, based on {Zach Holman's](https://github.com/
 6. follow the steps: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 7. don't forget to add the new key to github
 8. goto 3 'til that's done
-9 `cd dotfiles`
-10. `./script/bootstrap`
-11. relax!
-12. if softwareupdate finds updates, it may make you restart
+9. export the dotfiles path as `DOTFILES_ROOT` from `~/.localrc`
+10. `cd dotfiles`
+11. `./script/bootstrap`
+12. relax!
+13. if softwareupdate finds updates, it may make you restart
 
 
 
