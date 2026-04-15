@@ -48,3 +48,4 @@ unset config_files
 
 # use zmv
 autoload -U zmv
+[ -f "/Users/s.dell/.ghcup/env" ] && . "/Users/s.dell/.ghcup/env" # ghcup-env
