@@ -23,9 +23,6 @@
 	s = status --short
 	ss = status
 	sync = fetch --all --prune
-[user]
-	name = Simon Dell
-	email = simon.dell@dazn.com
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 [rerere]
