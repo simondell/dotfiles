@@ -25,3 +25,11 @@
 .DS_Store?
 Icon
 
+# Node version
+##############
+.node-version
+
+# local stuff
+#############
+tasks/
+.ai-dev/
