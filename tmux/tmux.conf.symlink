@@ -1,8 +1,22 @@
-# prefix key for the logi ergo keyboard (and all shitty keyboards without a right ctrl
-# set -g prefix C-n
+# prefix key for macBook and logi ergo keyboards (and all shitty keyboards without a right ctrl
+set -g prefix C-n
+bind C-b send-prefix
+
+# scroll with mouse
+set -g mouse on
+
+# pictographic split-windows
+bind | split-window -h
+bind - split-window -v
+
+# vim-movement pane navigation
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
 
 # reload config file (change file location to your the tmux.conf you want to use)
-bind r source-file ~/.tmux.conf
+bind r source-file ~/.tmux.conf \; display-message "Config reloaded"
 
 # don't rename windows automatically
 set-option -g allow-rename off
