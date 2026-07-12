@@ -7,6 +7,7 @@ tap "hashicorp/tap"
 
 brew "coreutils"
 brew "ddate"
+brew "direnv"
 brew "editorconfig"
 # brew "imagemagick"
 # brew "openssl"
