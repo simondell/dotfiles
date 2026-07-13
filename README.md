@@ -16,5 +16,8 @@ My shell and system configurations, based on {Zach Holman's](https://github.com/
 12. relax!
 13. if softwareupdate finds updates, it may make you restart
 
+## fonts
 
+Comic Mono with coder ligatures:
+https://github.com/wayou/comic-mono-font
 

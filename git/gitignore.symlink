@@ -3,6 +3,9 @@
 *.sublime*
 *.code-snippets
 
+*.code-workspace
+.vscode
+
 # Packages #
 ############
 # it's better to unpack these files and commit the raw source
@@ -21,4 +24,15 @@
 .DS_Store
 .DS_Store?
 Icon
+
+# Node version
+##############
+.node-version
+
+# local stuff
+#############
+tasks/
+.ai-dev/
+
+.envrc
 

@@ -1,7 +1,13 @@
+# your project folder that we can `c [tab]` to
+export PROJECTS=$HOME/Developer
+
+# shortcut to this dotfiles path is $ZSH
+export ZSH=$PROJECTS/dotfiles
+
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
-echo "Checking ~/.localrc"
+echo "Checking $HOME/.localrc"
 if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
@@ -11,8 +17,10 @@ fi
 typeset -U config_files
 config_files=($DOTFILES_ROOT/**/*.zsh)
 
-# load the path files
+# reset the path to a sane default
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+# load the path files
 for file in ${(M)config_files:#*/path.zsh}
 do
   source $file
@@ -40,3 +48,4 @@ unset config_files
 
 # use zmv
 autoload -U zmv
+[ -f "/Users/s.dell/.ghcup/env" ] && . "/Users/s.dell/.ghcup/env" # ghcup-env

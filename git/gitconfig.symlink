@@ -8,7 +8,7 @@
 [color]
 	ui = true
 [alias]
-	new = checkout -b
+	new = switch -c
 	b = branch
 	bs = branch --show-current
 	c = commit
@@ -16,16 +16,13 @@
 	ll = log
 	out = checkout
 	p = push
-	pp =  push --no-verify
-	ppp = push --force-with-lease
-	pppp = push --force
+	pnv =  push --no-verify
+	pfwl = push --force-with-lease
+	pf = push --force
 	squash = rebase -i HEAD~2
 	s = status --short
 	ss = status
 	sync = fetch --all --prune
-[user]
-	name = Simon Dell
-	email = simon.dell@dazn.com
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 [rerere]
