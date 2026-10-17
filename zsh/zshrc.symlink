@@ -1,8 +1,13 @@
 # your project folder that we can `c [tab]` to
 export PROJECTS=$HOME/Developer
 
-# shortcut to this dotfiles path is $ZSH
-export ZSH=$PROJECTS/dotfiles
+# Canonical install location: DOTFILES_ROOT. ~/.localrc wins when it exists
+# (the repo may live anywhere); this fallback covers fresh machines before
+# bootstrap and unset-variable shells.
+: ${DOTFILES_ROOT:="$PROJECTS/dotfiles"}
+# $ZSH kept as a deprecated alias so old scripts keep working; retire them
+# gradually to $DOTFILES_ROOT (see system/path.zsh history).
+export ZSH=$DOTFILES_ROOT
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -48,4 +53,4 @@ unset config_files
 
 # use zmv
 autoload -U zmv
-[ -f "/Users/s.dell/.ghcup/env" ] && . "/Users/s.dell/.ghcup/env" # ghcup-env
+[ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env" # ghcup-env
