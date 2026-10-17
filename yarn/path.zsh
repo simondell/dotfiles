@@ -1,1 +1,1 @@
-export PATH="/Users/s.dell/.yarn/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$PATH"
