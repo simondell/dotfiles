@@ -5,9 +5,6 @@ export PROJECTS=$HOME/Developer
 # (the repo may live anywhere); this fallback covers fresh machines before
 # bootstrap and unset-variable shells.
 : ${DOTFILES_ROOT:="$PROJECTS/dotfiles"}
-# $ZSH kept as a deprecated alias so old scripts keep working; retire them
-# gradually to $DOTFILES_ROOT (see system/path.zsh history).
-export ZSH=$DOTFILES_ROOT
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
