@@ -1,1 +1,1 @@
-source /Users/simon/.ghcup/env
+source "$HOME/.ghcup/env"
